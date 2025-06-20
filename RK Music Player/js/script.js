@@ -98,7 +98,8 @@ async function displayAlbums() {
 
     // Fetch the directory listing for the 'songs/' folder.
     // This assumes your 'songs' folder is directly at the root of your web server.
-    let res = await fetch(`songs/`);
+    //let res = await fetch(`songs/`);
+    let res = await fetch(`${basePath}songs/`);
     console.log("Fetch response for songs/ directory:", res);
 
     // Check if the fetch request was successful.
